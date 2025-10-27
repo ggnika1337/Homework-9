@@ -4,46 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="icon" href="images/">
+    <title>Register / Info</title>
   </head>
   <body>
-    <img src="images/photo.png" alt="trivio_picture" />
+    <img class="bigpicture" src="images/photo.png" alt="trivio_picture" />
     <div class="main_container">
-      <div class="heading">
-        <div class="ovalforicon">
-          <img src="images/Ellipse 14.svg" alt="" />
-        </div>
-        <h1 class="create">Create Your Account</h1>
-      </div>
-
-      <p>Became trivo member ,you’ll get exlusive treatment from trivo</p>
       <form>
-        <label for="fullname">Full Name</label>
-        <input
-          type="text"
-          name="fullname"
-          id="name"
-          placeholder="Enter your full name"
-        />
-
-        <label for="mail">Email</label>
-        <input type="text" name="mail" id="mail" placeholder="Enter email" />
-
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Create a password"
-        />
-        <button class="make_account">Create an account</button>
-        <button class="with_google">
-          <div>
-            <img src="images/flat-color-icons_google.svg" alt="googleico" />
+        <div class="heading">
+          <div class="ovalforicon">
+            <img src="images/Group 2.svg" alt="" />
           </div>
-          Sign Up With Google
-        </button>
-        <span>Already have an account? <a href="">log in</a></span>
+          <h1 class="create">Create Your Account</h1>
+        </div>
+
+        <p>Became trivo member ,you’ll get exlusive treatment from trivo</p>
+
+        <div class="inputsandbuttons">
+          <div class="inputs">
+            <div class="name">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                name="fullname"
+                id="name"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="mail">
+              <label for="mail">Email *</label>
+              <input
+                type="text"
+                name="mail"
+                id="mail"
+                required
+                placeholder="Enter email"
+              />
+            </div>
+
+            <div class="password">
+              <label for="password">Password *</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Create a password"
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="make_account">Create an account</button>
+            <button class="with_google">
+              <img src="images/flat-color-icons_google.svg" alt="googleico" />
+              Sign Up With Google
+            </button>
+          </div>
+          <span>Already have an account? <a href="">log in</a></span>
+        </div>
       </form>
     </div>
   </body>
